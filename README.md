@@ -1515,24 +1515,6 @@ For 8, 12, −5, 0 the final AC and SUM are 15. **E = 1** in the final register 
 
 The program adds integers until 0 is read and displays the sum: 8 + 12 + (−5) = **15**.
 
-## Viva questions
-
-**Q1. Why are two `BUN` instructions needed after `SZA`?**
-A skip jumps over only one instruction, so one branch handles the non-zero case and the next handles zero.
-
-**Q2. How does this differ from Practical 10?**
-The loop ends on 0 instead of a negative number, and negative numbers are added.
-
-**Q3. Why is E = 1 at the end for 8, 12, −5, 0?**
-`20 + FFFB` exceeds `FFFF`, so a carry goes into E. The 16-bit result is still correct.
-
-**Q4. What is the output if the first number is 0?**
-0.
-
-**Q5. What is the machine code of `SZA`?**
-`7004` hex.
-
----
 
 # Appendix: Quick reference
 
